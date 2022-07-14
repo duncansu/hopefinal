@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+      >
+<head>
+    <meta charset="UTF-8">
+    <title>書單詳情</title>
+</head>
+<body th:text="${books}">
+    <div>
+        <p>
+            <strong>書名: </strong><span th:tesxt="*{name}">我愛烏龜</span>
+        </p>
+        <p>
+            <strong>作者: </strong><span th:text="*{author}">蘇堂堂</span>
+        </p>
+    </div>
+</body>
+</html>
