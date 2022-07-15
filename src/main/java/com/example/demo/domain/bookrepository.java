@@ -6,7 +6,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
 import java.util.List;
-
+import java.security.cert.*;
 public interface bookrepository extends JpaRepository<book,Long> {
 @Query("select b from book b where b.author = ?1")
 List<book>findByAuthor(String author);
